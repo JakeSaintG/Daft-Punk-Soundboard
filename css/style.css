@@ -1,0 +1,155 @@
+* {
+	box-sizing: border-box;
+} 
+
+.debug {
+	border: 2px solid tomato;
+}
+
+header {
+    margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+body {
+	background: rgb(68, 68, 68);
+}
+
+.ShowHide {
+	overflow: hidden;
+	background-color: black;
+	display: flex;
+	position: fixed; 
+	width: 100%;
+	flex-direction: column;
+	top: 0; 
+	border: 5px dashed yellow;
+	text-align: center;
+}
+
+.warning {
+	padding: 15px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.understand {
+	padding: 5px;
+	margin-bottom: 10px;	
+	box-shadow:inset 0px 1px 3px 0px #babbbb;
+	border-radius: 5px;
+	border:1px solid black;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #626363;
+	background: rgb(85, 9, 85);
+}
+
+.buttonboard {
+	padding: 10px;
+	background: silver;
+  	border-radius: 5px;
+	margin: 20px auto;
+	box-shadow: 0 1px 14px rgba(0,0,0, .40);
+}
+
+.buttonrow {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 80px;
+}
+
+.item {
+	margin: 5px;	
+	box-shadow:inset 0px 1px 3px 0px #babbbb;
+	flex: 1 2px;
+	border-radius: 5px;
+	border:1px solid black;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #626363;
+}
+
+.row1 {
+	background: linear-gradient(#A90D72,#C53C68);
+}
+
+.row2 {
+	background: linear-gradient(#C53C68, #DD6644);
+}
+
+.row3 {
+	background: linear-gradient(#DD6644,#FFC100);
+}
+
+.row4 {
+	background: linear-gradient( #FFC100, #FFF704);
+}
+
+.wrap {
+	min-height: calc(100vh - 58px);
+}
+
+.DP {
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+footer {
+	background: #d9e4ea;
+	padding: 20px;
+  	text-align: center;
+}
+
+@media (min-width: 769px) { 
+	.ShowHide {
+		width: 80%; 
+	}
+
+}
+
+
+@media (min-width: 900px) { 
+	.ShowHide {
+		width: 80%; 
+	}
+	
+	body {
+		background: url(../img/back2.png);
+		background-size: cover;
+		background-position:50% 50%;
+	}
+
+	.buttonboard {
+		width: 70%;
+	}
+
+	.wrap {
+		width: 80%;
+		margin: auto;
+		background: rgb(68, 68, 68);
+	}
+}

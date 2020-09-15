@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daft Punk</title>
+        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="ShowHide" id="Bar">
+                <div class="warning">
+                    DISCLAIMER! I do not own the rights to this song or audio. All audio in this app was made by me (poorly) and will be a placeholder until further notice. This application is intended for showcasing coding skill and is not meant for distribution. By clicking "I understand", you agree to not sue me.
+                </div>
+                <div>
+                <button class="understand" href="#" onclick="Hide(Bar);">I Understand</button>
+                </div>
+            </div>
+            <header class="DP">
+                <img class="logo" src="img/logo.png" alt="Daft Punk">
+            </header>    
+            <div class="buttonboard">
+                <div class="buttonrow">
+                    <button class="item-1 item row1" onclick="playAudio('audio/workit.mp3')">Work It</button>
+                    <button class="item-2 item row1" onclick="playAudio('audio/makeit.mp3')">Make It</button>
+                    <button class="item-3 item row1" onclick="playAudio('audio/doit.mp3')">Do It</button>
+                    <button class="item-4 item row1" onclick="playAudio('audio/makesus.mp3')">Makes Us</button>
+                </div>
+                <div class="buttonrow">
+                    <button class="item-5 item row2" onclick="playAudio('audio/harder.mp3')">Harder</button>
+                    <button class="item-6 item row2" onclick="playAudio('audio/better.mp3')">Better</button>
+                    <button class="item-7 item row2" onclick="playAudio('audio/faster.mp3')">Faster</button>
+                    <button class="item-8 item row2" onclick="playAudio('audio/stronger.mp3')">Stronger</button>
+                </div>
+                <div class="buttonrow">
+                    <button class="item-9 item row3" onclick="playAudio('audio/morethan.mp3')">More Than</button>
+                    <button class="item-10 item row3" onclick="playAudio('audio/hour.mp3')">Hour</button>
+                    <button class="item-11 item row3" onclick="playAudio('audio/our.mp3')">Our</button>
+                    <button class="item-12 item row3" onclick="playAudio('audio/never.mp3')">Never</button>
+                </div>
+                <div class="buttonrow">
+                    <button class="item-13 item row4" onclick="playAudio('audio/ever.mp3')">Ever</button>
+                    <button class="item-14 item row4" onclick="playAudio('audio/after.mp3')">After</button>
+                    <button class="item-15 item row4" onclick="playAudio('audio/workis.mp3')">Work Is</button>
+                    <button class="item-16 item row4" onclick="playAudio('audio/over.mp3')">Over</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span>A JakeSaintG Project</span>
+        </footer>
+        <script src="js/sounds.js"></script>
+    </body>
+</html>

@@ -7,47 +7,52 @@
         <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     </head>
     <body>
-        <div class="wrap">
-            <div class="ShowHide" id="Bar">
-                <div class="warning">
-                    DISCLAIMER! I do not own the rights to this song or audio. All audio in this app was made by me (poorly) and will be a placeholder until further notice. This application is intended for showcasing coding skill and is not meant for distribution. By clicking "I understand", you agree to not sue me.
-                </div>
-                <div>
-                    <button class="understand" href="#" onclick="Hide(Bar);">I Understand</button>
-                </div>
-            </div>
-            <header class="DP">
+        <main>
+            <dialog>
+                <h3>DISCLAIMER!</h3>
+                <p>
+                    I do not own the rights to this song or audio. <br>
+                    This application is intended as a code challenge and is not meant for distribution. <br>
+                    By clicking "I Understand", you agree to not sue me. <br>
+                </p>
+                <form method="dialog">
+                    <button href="#" id="close">I Understand</button>
+                </form>
+            </dialog>
+
+            <header>
                 <img class="logo" src="img/logo.png" alt="Daft Punk">
             </header>    
             <div class="buttonboard">
                 <div class="buttonrow">
-                    <button class="item-1 item row1" onclick="playAudio('audio/workit.mp3')">Work It</button>
-                    <button class="item-2 item row1" onclick="playAudio('audio/makeit.mp3')">Make It</button>
-                    <button class="item-3 item row1" onclick="playAudio('audio/doit.mp3')">Do It</button>
-                    <button class="item-4 item row1" onclick="playAudio('audio/makesus.mp3')">Makes Us</button>
+                    <button class="item row1" onclick="playAudio('audio/workit.mp3')">Work It<br> [1]</button>
+                    <button class="item row1" onclick="playAudio('audio/makeit.mp3')">Make It<br> [2]</button>
+                    <button class="item row1" onclick="playAudio('audio/doit.mp3')">Do It<br> [3]</button>
+                    <button class="item row1" onclick="playAudio('audio/makesus.mp3')">Makes Us<br> [4]</button>
                 </div>
                 <div class="buttonrow">
-                    <button class="item-5 item row2" onclick="playAudio('audio/harder.mp3')">Harder</button>
-                    <button class="item-6 item row2" onclick="playAudio('audio/better.mp3')">Better</button>
-                    <button class="item-7 item row2" onclick="playAudio('audio/faster.mp3')">Faster</button>
-                    <button class="item-8 item row2" onclick="playAudio('audio/stronger.mp3')">Stronger</button>
+                    <button class="item row2" onclick="playAudio('audio/harder.mp3')">Harder<br> [q]</button>
+                    <button class="item row2" onclick="playAudio('audio/better.mp3')">Better<br> [w]</button>
+                    <button class="item row2" onclick="playAudio('audio/faster.mp3')">Faster<br> [e]</button>
+                    <button class="item row2" onclick="playAudio('audio/stronger.mp3')">Stronger<br> [r]</button>
                 </div>
                 <div class="buttonrow">
-                    <button class="item-9 item row3" onclick="playAudio('audio/morethan.mp3')">More Than</button>
-                    <button class="item-10 item row3" onclick="playAudio('audio/hour.mp3')">Hour</button>
-                    <button class="item-11 item row3" onclick="playAudio('audio/our.mp3')">Our</button>
-                    <button class="item-12 item row3" onclick="playAudio('audio/never.mp3')">Never</button>
+                    <button class="item row3" onclick="playAudio('audio/morethan.mp3')">More Than<br> [a]</button>
+                    <button class="item row3" onclick="playAudio('audio/hour.mp3')">Hour<br> [s]</button>
+                    <button class="item row3" onclick="playAudio('audio/our.mp3')">Our<br> [d]</button>
+                    <button class="item row3" onclick="playAudio('audio/never.mp3')">Never<br> [f]</button>
                 </div>
                 <div class="buttonrow">
-                    <button class="item-13 item row4" onclick="playAudio('audio/ever.mp3')">Ever</button>
-                    <button class="item-14 item row4" onclick="playAudio('audio/after.mp3')">After</button>
-                    <button class="item-15 item row4" onclick="playAudio('audio/workis.mp3')">Work Is</button>
-                    <button class="item-16 item row4" onclick="playAudio('audio/over.mp3')">Over</button>
+                    <button class="item row4" onclick="playAudio('audio/ever.mp3')">Ever<br> [z]</button>
+                    <button class="item row4" onclick="playAudio('audio/after.mp3')">After<br> [x]</button>
+                    <button class="item row4" onclick="playAudio('audio/workis.mp3')">Work Is<br> [c]</button>
+                    <button class="item row4" onclick="playAudio('audio/over.mp3')">Over<br> [v]</button>
                 </div>
             </div>
-        </div>
+        </main>
         <footer>
             <span>A JakeSaintG Project</span>
         </footer>
@@ -68,6 +73,24 @@
         <audio data-key="x" src="audio/after.mp3"></audio>
         <audio data-key="c" src="audio/workis.mp3"></audio>
         <audio data-key="v" src="audio/over.mp3"></audio>
+
+        <!-- Note: -->
+        <!-- The original version of this app used my own voice that I edited in Audacity... -->
+        <!-- I was tempted to remove that but, if you're curious...hold shift and then press the key. -->
+        <audio data-key="!" src="audio/legacy-audio/workit.mp3"></audio>
+        <audio data-key="@" src="audio/legacy-audio/makeit.mp3"></audio>
+        <audio data-key="#" src="audio/legacy-audio/doit.mp3"></audio>
+        <audio data-key="$" src="audio/legacy-audio/makesus.mp3"></audio> 
+        <audio data-key="Q" src="audio/legacy-audio/harder.mp3"></audio>
+        <audio data-key="W" src="audio/legacy-audio/better.mp3"></audio>
+        <audio data-key="E" src="audio/legacy-audio/faster.mp3"></audio>
+        <audio data-key="R" src="audio/legacy-audio/stronger.mp3"></audio>
+        <audio data-key="!" src="audio/legacy-audio/workit.mp3"></audio>
+        <audio data-key="@" src="audio/legacy-audio/makeit.mp3"></audio>
+        <audio data-key="#" src="audio/legacy-audio/doit.mp3"></audio>
+        <audio data-key="$" src="audio/legacy-audio/makesus.mp3"></audio>
+        
         <script src="js/index.js"></script>
+        <script src="js/dialog.js"></script>
     </body>
 </html>

@@ -2,61 +2,48 @@
 	box-sizing: border-box;
 } 
 
-.debug {
-	border: 2px solid tomato;
+body {
+	background: rgb(68, 68, 68);
+	font-family:Arial;
+}
+
+main {
+	min-height: calc(100vh - 58px);
 }
 
 header {
-    margin: 0;
+	text-align: center;
+	padding-top: 15px;
+    margin: 0 auto;
 }
 
-html {
-	height: 100%;
-}
-
-h1 {
-    margin: 0;
-}
-
-
-body {
-	background: rgb(68, 68, 68);
-}
-
-.ShowHide {
-	overflow: hidden;
+dialog {
 	background-color: black;
-	display: flex;
-	position: fixed; 
-	width: 100%;
-	flex-direction: column;
-	top: 0; 
 	border: 5px dashed yellow;
 	text-align: center;
 }
 
-.warning {
-	padding: 15px;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	text-decoration:none;
+dialog::backdrop {
+	background: rgba(0,0,0, .8);
 }
 
-.understand {
+h3,
+p {
+	color:#ffffff;
+}
+
+#close {
 	padding: 5px;
 	margin-bottom: 10px;	
-	box-shadow:inset 0px 1px 3px 0px #babbbb;
+	box-shadow: inset 0px 1px 3px 0px #babbbb;
 	border-radius: 5px;
-	border:1px solid black;
-	cursor:pointer;
+	border: 1px solid black;
+	cursor: pointer;
 	color:#ffffff;
-	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
 	text-decoration:none;
-	text-shadow:0px -1px 0px #626363;
+	text-shadow: 0px -1px 0px #626363;
 	background: rgb(85, 9, 85);
 }
 
@@ -80,14 +67,12 @@ body {
 	box-shadow:inset 0px 1px 3px 0px #babbbb;
 	flex: 1 2px;
 	border-radius: 5px;
-	border:1px solid black;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
+	border: 1px solid black;
+	cursor: pointer;
+	color: #ffffff;
 	font-size: 10px;
-	text-decoration:none;
-	font-weight:bold;
-	text-shadow:0px -1px 0px #626363;
+	font-weight: bold;
+	text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black;
 }
 
 .row1 {
@@ -106,29 +91,13 @@ body {
 	background: linear-gradient( #FFC100, #FFF704);
 }
 
-.wrap {
-	min-height: calc(100vh - 58px);
-}
-
-.DP {
-	text-align: center;
-	padding-top: 15px;
-	font-size: 20px;
-    font-family: sans-serif;
-    margin: 0 auto;
-}
-
 footer {
 	background: #d9e4ea;
 	padding: 20px;
   	text-align: center;
 }
 
-@media (min-width: 1025px) { 
-	.ShowHide {
-		width: 80%; 
-	}
-	
+@media (min-width: 1200px) { 	
 	body {
 		background: url(../img/back2.png);
 		background-size: cover;
@@ -139,7 +108,7 @@ footer {
 		width: 70%;
 	}
 
-	.wrap {
+	main {
 		width: 80%;
 		margin: auto;
 		background: rgb(68, 68, 68);
